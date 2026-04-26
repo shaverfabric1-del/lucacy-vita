@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Lucacy Vita — Suplementos y vitaminas naturales para energía, vitalidad y bienestar. Envíos desde Elizabeth, NJ. Pide directo por WhatsApp." />
+<meta property="og:title" content="Lucacy Vita — Suplementos & Vitaminas" />
+<meta property="og:description" content="Suplementos y vitaminas naturales con envío desde Elizabeth, NJ. Pide por WhatsApp." />
+<meta property="og:type" content="website" />
+<title>Lucacy Vita — Suplementos & Vitaminas | Pedir por WhatsApp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0f0d;
+    --bg-2: #111814;
+    --card: #161e1a;
+    --card-hover: #1c2622;
+    --gold: #d4af37;
+    --gold-soft: #e8c95a;
+    --green: #2ecc71;
+    --green-deep: #1f8a4c;
+    --red: #ff4757;
+    --text: #f4f1ea;
+    --muted: #9aa39e;
+    --border: rgba(212, 175, 55, 0.18);
+    --shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* =============== HEADER =============== */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 15, 13, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .logo span { color: var(--green); -webkit-text-fill-color: var(--green); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  .nav-links a:hover { opacity: 1; color: var(--gold); }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--green);
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  .nav-cta:hover { background: var(--green-deep); transform: translateY(-1px); }
+
+  /* =============== HERO =============== */
+  .hero {
+    position: relative;
+    padding: 100px 24px 80px;
+    text-align: center;
+    overflow: hidden;
+    background: radial-gradient(ellipse at top, rgba(46, 204, 113, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(46, 204, 113, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+  }
+  .hero-content { position: relative; max-width: 900px; margin: 0 auto; }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(46, 204, 113, 0.12);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--green);
+    margin-bottom: 24px;
+  }
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.2);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.2); }
+    50% { box-shadow: 0 0 0 8px rgba(46, 204, 113, 0); }
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 6vw, 68px);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    font-size: clamp(16px, 1.6vw, 19px);
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 36px;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--green);
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(46, 204, 113, 0.35);
+  }
+  .btn-primary:hover {
+    background: var(--green-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(46, 204, 113, 0.45);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 24px;
+    max-width: 720px;
+    margin: 60px auto 0;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat-lbl {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* =============== FILTERS =============== */
+  .filters-wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 24px 24px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+  .section-sub {
+    color: var(--muted);
+    margin-bottom: 32px;
+  }
+  .filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .filter-btn {
+    padding: 10px 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .filter-btn:hover { background: var(--card-hover); border-color: var(--gold); }
+  .filter-btn.active {
+    background: var(--gold);
+    color: #1a1a1a;
+    border-color: var(--gold);
+  }
+
+  /* =============== PRODUCT GRID =============== */
+  .grid-wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 24px 24px 100px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.5);
+    box-shadow: var(--shadow);
+  }
+  .card-img {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, #1a2520 0%, #0e1612 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .card-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(46, 204, 113, 0.1) 0%, transparent 50%);
+  }
+  .card-img img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .card:hover .card-img img { transform: scale(1.06); }
+  .card-img-text {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+  }
+  .card-img-text .icon {
+    font-size: 56px;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 4px 20px rgba(212, 175, 55, 0.4));
+  }
+  .card-img-text .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  .badge-sale {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--red);
+    color: #fff;
+    padding: 5px 11px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 3;
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+  }
+  .badge-out {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 5px 11px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    z-index: 3;
+  }
+
+  .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+  }
+  .card-cat {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--muted);
+  }
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+    min-height: 38px;
+  }
+  .card-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: auto;
+  }
+  .price-now {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--gold);
+  }
+  .price-old {
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: line-through;
+  }
+  .card-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: var(--green);
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+    margin-top: 4px;
+  }
+  .card-cta:hover {
+    background: var(--green-deep);
+    transform: translateY(-1px);
+  }
+  .card-cta.disabled {
+    background: #2a2f2c;
+    color: var(--muted);
+    pointer-events: none;
+  }
+  .card-cta svg { width: 18px; height: 18px; }
+
+  /* =============== TRUST BAR =============== */
+  .trust {
+    background: var(--bg-2);
+    padding: 60px 24px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .trust-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    text-align: center;
+  }
+  .trust-item .icon { font-size: 36px; margin-bottom: 12px; }
+  .trust-item h3 { font-size: 16px; margin-bottom: 6px; color: var(--gold); }
+  .trust-item p { font-size: 14px; color: var(--muted); }
+
+  /* =============== FOOTER =============== */
+  footer {
+    padding: 60px 24px 40px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+  footer p { margin: 6px 0; }
+
+  /* =============== FLOATING WHATSAPP =============== */
+  .float-wa {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(46, 204, 113, 0.5);
+    z-index: 99;
+    text-decoration: none;
+    transition: transform 0.2s;
+    animation: float 3s ease-in-out infinite;
+  }
+  .float-wa:hover { transform: scale(1.1); }
+  .float-wa svg { width: 32px; height: 32px; fill: white; }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  .float-wa::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid var(--green);
+    animation: ring 2s ease-out infinite;
+  }
+  @keyframes ring {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+
+  /* =============== ADMIN PANEL =============== */
+  .admin-fab {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 52px;
+    height: 52px;
+    background: var(--gold);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+    z-index: 99;
+    font-size: 22px;
+    transition: transform 0.2s;
+  }
+  .admin-fab:hover { transform: scale(1.1); }
+  .admin-fab[hidden] { display: none; }
+
+  .admin-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .admin-overlay.open { display: flex; }
+  .admin-modal {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1100px;
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 0;
+  }
+  #adminContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .admin-head {
+    padding: 22px 26px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .admin-head h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--gold);
+  }
+  .admin-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .admin-btn {
+    padding: 9px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .admin-btn:hover { background: var(--card-hover); border-color: var(--gold); }
+  .admin-btn.primary { background: var(--green); color: #fff; border-color: var(--green); }
+  .admin-btn.primary:hover { background: var(--green-deep); }
+  .admin-btn.danger { background: rgba(255,71,87,0.15); border-color: rgba(255,71,87,0.4); color: var(--red); }
+  .admin-btn.danger:hover { background: rgba(255,71,87,0.25); }
+  .admin-btn.gold { background: var(--gold); color: #1a1a1a; border-color: var(--gold); }
+  .admin-body {
+    padding: 22px 26px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+    min-height: 0;
+  }
+  .admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .admin-item {
+    display: grid;
+    grid-template-columns: 56px 1fr auto auto;
+    gap: 14px;
+    align-items: center;
+    padding: 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  .admin-thumb {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1a2520 0%, #0e1612 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    overflow: hidden;
+  }
+  .admin-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .admin-info { min-width: 0; }
+  .admin-info .n { font-weight: 600; font-size: 14px; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .admin-info .m { font-size: 12px; color: var(--muted); }
+  .admin-price-tag { color: var(--gold); font-weight: 700; font-size: 15px; white-space: nowrap; }
+  .admin-icons { display: flex; gap: 6px; }
+  .admin-icons button {
+    width: 34px;
+    height: 34px;
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .admin-icons button:hover { border-color: var(--gold); }
+  .admin-icons button.del:hover { border-color: var(--red); color: var(--red); }
+
+  /* form */
+  .admin-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .admin-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .admin-form label.full { grid-column: 1 / -1; }
+  .admin-form input,
+  .admin-form select,
+  .admin-form textarea {
+    padding: 11px 13px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .admin-form input:focus,
+  .admin-form select:focus,
+  .admin-form textarea:focus { border-color: var(--gold); }
+  .admin-form textarea { resize: vertical; min-height: 70px; }
+
+  .admin-toast {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--green);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 300;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .admin-toast.show { opacity: 1; transform: translateX(-50%) translateY(-8px); }
+
+  .admin-pin {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    max-width: 360px;
+    margin: 60px auto;
+    text-align: center;
+  }
+  .admin-pin h3 { color: var(--gold); margin-bottom: 6px; }
+  .admin-pin p { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+  .admin-pin input {
+    width: 100%;
+    padding: 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 4px;
+    outline: none;
+    margin-bottom: 12px;
+  }
+  .admin-pin input:focus { border-color: var(--gold); }
+
+  /* =============== RESPONSIVE =============== */
+  @media (max-width: 720px) {
+    .nav-links { display: none; }
+    .hero { padding: 60px 20px 50px; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .card-body { padding: 14px; }
+    .card-title { font-size: 13px; }
+    .price-now { font-size: 18px; }
+    .card-cta { padding: 10px 12px; font-size: 12px; }
+    .card-img-text .name { font-size: 13px; }
+    .card-img-text .icon { font-size: 38px; }
+    .float-wa { width: 56px; height: 56px; bottom: 16px; right: 16px; }
+  }
+  @media (max-width: 380px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo">Lucacy<span>Vita</span></div>
+    <ul class="nav-links">
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#categorias">Categorías</a></li>
+      <li><a href="#confianza">Por qué nosotros</a></li>
+    </ul>
+    <a href="#" class="nav-cta wa-link" data-msg="Hola, quiero información sobre los productos.">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+      WhatsApp
+    </a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-badge">Atención inmediata por WhatsApp</span>
+    <h1>Suplementos & vitaminas para tu <em>vitalidad diaria</em></h1>
+    <p>Energía, rendimiento, control de peso y bienestar. Productos 100% naturales con envío rápido. Pide directo por WhatsApp y recibe asesoría personalizada.</p>
+    <div class="hero-actions">
+      <a href="#productos" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+        Ver productos
+      </a>
+      <a href="#" class="btn btn-ghost wa-link" data-msg="Hola, me gustaría hablar con un asesor.">
+        Hablar con un asesor
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">40+</div>
+        <div class="stat-lbl">Productos</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-lbl">Naturales</div>
+      </div>
+      <div>
+        <div class="stat-num">24/7</div>
+        <div class="stat-lbl">Atención</div>
+      </div>
+      <div>
+        <div class="stat-num">USA</div>
+        <div class="stat-lbl">Envíos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filters-wrap" id="categorias">
+  <h2 class="section-title">Catálogo completo</h2>
+  <p class="section-sub">Toca cualquier producto y te abrirá WhatsApp con el pedido listo.</p>
+  <div class="filters" id="filters"></div>
+</div>
+
+<section class="grid-wrap" id="productos">
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="trust" id="confianza">
+  <div class="trust-grid">
+    <div class="trust-item">
+      <div class="icon">⚡</div>
+      <h3>Envío rápido</h3>
+      <p>Despacho en 24–48h dentro de USA</p>
+    </div>
+    <div class="trust-item">
+      <div class="icon">🌿</div>
+      <h3>100% Natural</h3>
+      <p>Fórmulas con ingredientes naturales</p>
+    </div>
+    <div class="trust-item">
+      <div class="icon">💬</div>
+      <h3>Asesoría real</h3>
+      <p>Te respondemos por WhatsApp al instante</p>
+    </div>
+    <div class="trust-item">
+      <div class="icon">🔒</div>
+      <h3>Pago seguro</h3>
+      <p>Coordinamos el pago contigo de forma segura</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Lucacy Vita</strong> · Suplementos & Vitaminas</p>
+  <p>📍 723 Jersey Ave, Elizabeth, NJ · 📱 <a href="#" class="wa-link" data-msg="Hola, quiero hacer un pedido.">+1 (908) 414-5276</a></p>
+  <p>✉️ <a href="mailto:info@lucacyvita.shop" style="color:var(--gold);text-decoration:none;">info@lucacyvita.shop</a></p>
+  <p style="margin-top:14px; opacity:0.6; font-size:12px;">© 2026 Lucacy Vita · Todos los derechos reservados</p>
+</footer>
+
+<a href="#" class="float-wa wa-link" data-msg="Hola, quiero información sobre los productos." aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+</a>
+
+<!-- ============ ADMIN PANEL ============ -->
+<button class="admin-fab" id="adminFab" hidden title="Panel de administración (Ctrl+Alt+A)">⚙️</button>
+
+<div class="admin-overlay" id="adminOverlay">
+  <div class="admin-modal">
+    <div id="adminContent"></div>
+  </div>
+</div>
+
+<div class="admin-toast" id="adminToast"></div>
+
+<script>
+  // ============ CONFIG ============
+  const WHATSAPP_NUMBER = '19084145276'; // +1 (908) 414-5276
+  
+  // ============ PRODUCTS ============
+  // Imágenes reales tomadas de biqfelusa.com (CDN de Shopify)
+  const IMG = {
+    biqfelX1:    'https://biqfelusa.com/cdn/shop/files/PJYW9090.jpg',
+    biqfelX2:    'https://biqfelusa.com/cdn/shop/files/WBMW2948_ee3b5084-b5ed-40cf-82e8-bbb91516824f.jpg',
+    biqfelX3:    'https://biqfelusa.com/cdn/shop/files/JCIA8804.jpg',
+    comboEnergy: 'https://biqfelusa.com/cdn/shop/files/PDXV2043.jpg',
+    meroMacho:   'https://biqfelusa.com/cdn/shop/files/IMG-0082.jpg',
+    meroMachoX2: 'https://biqfelusa.com/cdn/shop/files/IMG-0063.jpg',
+    meroMachoX3: 'https://biqfelusa.com/cdn/shop/files/IMG-0080.jpg',
+    vitaferL:    'https://biqfelusa.com/cdn/shop/files/UVVH8762.jpg',
+    vitaferL2:   'https://biqfelusa.com/cdn/shop/files/AWIN3158.jpg',
+    vitaferL3:   'https://biqfelusa.com/cdn/shop/files/VXGV7490.jpg',
+    vitafer48:   'https://biqfelusa.com/cdn/shop/files/s-l1600_2953c68f-ba53-4dab-a1dc-55a59a7e284e.webp',
+    vitafer16:   'https://biqfelusa.com/cdn/shop/files/s-l1600_af5479ef-ae78-49f2-91fe-047f0920dc36.webp',
+    vitafer24:   'https://biqfelusa.com/cdn/shop/files/s-l1600_a5cedcdd-ccd5-4ab9-8c19-2424d84d4567.webp',
+    vitafer64:   'https://biqfelusa.com/cdn/shop/files/s-l1600_d9d42424-4511-479f-9ef3-4cf6ca7b809d.webp',
+    vitachitos:  'https://biqfelusa.com/cdn/shop/files/s-l1600_8bc88d5d-6696-410b-bd5e-f53de28adf70.webp',
+    vitafer25:   'https://biqfelusa.com/cdn/shop/files/93054763-277e-4d65-9feb-98a0b47cb160.png',
+    mwBurner:    'https://biqfelusa.com/cdn/shop/files/s-l1600_9fb92441-5ca7-439b-850d-bb2fe567ee71.webp',
+    mwGold:      'https://biqfelusa.com/cdn/shop/files/s-l1600_131d6d2b-1bde-456c-98b1-801eebdf3e4a.webp',
+    mwKit:       'https://biqfelusa.com/cdn/shop/files/s-l1600_c823d5e1-d477-4199-b895-ba43402e6b61.webp',
+    powersX:     'https://biqfelusa.com/cdn/shop/files/s-l1600_5b9f5b53-d428-4fdf-835f-6e29835c0266.webp'
+  };
+
+  const DEFAULT_PRODUCTS = [
+    { name: 'ALCAPLUS', icon: '💊', price: 39.99, oldPrice: 49.00, sale: 18, cat: 'weight' },
+    { name: 'BIQ-FEL X1 Bottle', icon: '🧪', price: 35.00, cat: 'energy', img: IMG.biqfelX1 },
+    { name: 'BIQ-FEL X2', icon: '🧪', price: 65.00, cat: 'energy', img: IMG.biqfelX2 },
+    { name: 'BIQ-FEL X3', icon: '🧪', price: 85.00, cat: 'energy', img: IMG.biqfelX3 },
+    { name: 'Combo Energy 1V + 1B 500ml', icon: '⚡', price: 70.00, cat: 'energy', img: IMG.comboEnergy },
+    { name: 'KLG 500ml Big Thick All Natural', icon: '💪', price: 36.99, oldPrice: 51.79, sale: 29, cat: 'men' },
+    { name: 'Ecuadorian Male Group', icon: '💪', price: 39.00, cat: 'men', img: IMG.meroMacho },
+    { name: 'VITAFER L Gold X 25 Units', icon: '🍯', price: 590.00, oldPrice: 650.00, sale: 9, cat: 'vitafer', img: IMG.vitafer25 },
+    { name: 'VITAFER L Supplement 500ml', icon: '🍯', price: 39.99, cat: 'vitafer', img: IMG.vitaferL },
+    { name: 'Vitafer L-Gold 6 Pack 20ml Vitachitos', icon: '🍯', price: 29.99, oldPrice: 35.99, sale: 17, cat: 'vitafer', img: IMG.vitachitos },
+    { name: 'X2 Vitafer L Supplement 500ml', icon: '🍯', price: 70.00, cat: 'vitafer', img: IMG.vitaferL2 },
+    { name: 'X3 Vitafer-L Supplement 500ml', icon: '🍯', price: 100.00, oldPrice: 115.00, sale: 13, cat: 'vitafer', img: IMG.vitaferL3 },
+    { name: 'Vitafer L-Gold 16 Sachets 10ml', icon: '🍯', price: 40.00, oldPrice: 54.59, sale: 27, cat: 'vitafer', img: IMG.vitafer16 },
+    { name: 'Vitafer L-Gold 24 Pack 20ml', icon: '🍯', price: 75.00, oldPrice: 83.99, sale: 11, cat: 'vitafer', img: IMG.vitafer24, outOfStock: true },
+    { name: 'Vitafer L-Gold 500ml + 6 Sachets', icon: '🍯', price: 47.99, oldPrice: 67.19, sale: 29, cat: 'vitafer', img: IMG.vitaferL },
+    { name: 'Vitafer L-Gold 500ml + 1 Vitachito + 4 Sachets', icon: '🍯', price: 45.00, oldPrice: 63.00, sale: 29, cat: 'vitafer', img: IMG.vitaferL2 },
+    { name: 'Tira Q Tira Jarabe Natural 500ml', icon: '🌿', price: 37.99, oldPrice: 53.19, sale: 29, cat: 'wellness' },
+    { name: 'Vitafer L-Gold 64 Sachets', icon: '🍯', price: 100.00, oldPrice: 139.99, sale: 29, cat: 'vitafer', img: IMG.vitafer64 },
+    { name: 'Vitafer L-Gold X3 - 48 Sachets', icon: '🍯', price: 90.00, oldPrice: 118.99, sale: 24, cat: 'vitafer', img: IMG.vitafer48 },
+    { name: 'X2 Box Vitafer Sachets 10ml x16 (32 total)', icon: '🍯', price: 59.99, oldPrice: 83.99, sale: 29, cat: 'vitafer', img: IMG.vitafer16 },
+    { name: 'EROGAN Male Dietary Supplement', icon: '💪', price: 35.99, oldPrice: 50.39, sale: 29, cat: 'men' },
+    { name: "Powers'X Men's Vitality 12 Pack (48 Tabs)", icon: '⚡', price: 35.99, oldPrice: 46.19, sale: 22, cat: 'men', img: IMG.powersX },
+    { name: 'Actifort 650ml Sabor Vainilla', icon: '🥛', price: 32.99, cat: 'wellness' },
+    { name: "Powers'X Men's Vitality 6 Pack (24 Tabs)", icon: '⚡', price: 25.00, cat: 'men', img: IMG.powersX },
+    { name: "Powers'X Women Sex Drive Enhancer 12 Tabs", icon: '🌸', price: 25.00, cat: 'women', img: IMG.powersX },
+    { name: "Powers'X Men's Vitality 8 Pack (32 Tabs)", icon: '⚡', price: 27.99, oldPrice: 29.99, sale: 7, cat: 'men', img: IMG.powersX },
+    { name: 'Alcaplus Kit 3 Weight Loss Detox', icon: '💊', price: 90.00, cat: 'weight' },
+    { name: '2x Alcaplus Natural Weight Loss', icon: '💊', price: 65.00, cat: 'weight' },
+    { name: 'ALFASX Max 550ml 100% Natural', icon: '⚡', price: 38.00, cat: 'energy' },
+    { name: 'Brocha China', icon: '🖌️', price: 25.00, cat: 'wellness' },
+    { name: 'Rhino Dorado Spray Retardante', icon: '💪', price: 25.00, cat: 'men' },
+    { name: 'Honey Energy Support Men 250ml', icon: '🍯', price: 59.99, oldPrice: 65.00, sale: 8, cat: 'men', img: IMG.vitaferL3 }
+  ];
+
+  // ============ STORAGE / EDITABLE PRODUCTS ============
+  const STORAGE_KEY = 'vb_products_v1';
+  function loadProducts() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) return JSON.parse(saved);
+    } catch (e) {}
+    return JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+  }
+  function saveProducts() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+  }
+  let products = loadProducts();
+
+  const categories = {
+    all: 'Todos',
+    vitafer: 'Vitafer L-Gold',
+    men: 'Hombre',
+    women: 'Mujer',
+    weight: 'Pérdida de peso',
+    energy: 'Energía',
+    wellness: 'Bienestar'
+  };
+
+  const catLabels = {
+    vitafer: 'Vitafer',
+    men: 'Hombre',
+    women: 'Mujer',
+    weight: 'Peso',
+    energy: 'Energía',
+    wellness: 'Bienestar'
+  };
+
+  // ============ RENDER ============
+  function buildWaUrl(msg) {
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+  }
+
+  function renderFilters() {
+    const filtersEl = document.getElementById('filters');
+    filtersEl.innerHTML = Object.entries(categories).map(([key, label]) =>
+      `<button class="filter-btn ${key === 'all' ? 'active' : ''}" data-cat="${key}">${label}</button>`
+    ).join('');
+    filtersEl.addEventListener('click', e => {
+      if (!e.target.matches('.filter-btn')) return;
+      filtersEl.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderGrid(e.target.dataset.cat);
+    });
+  }
+
+  function renderGrid(cat = 'all') {
+    const grid = document.getElementById('grid');
+    const list = cat === 'all' ? products : products.filter(p => p.cat === cat);
+    grid.innerHTML = list.map(p => {
+      const msg = `Hola! Me interesa el producto: *${p.name}* ($${p.price.toFixed(2)}). ¿Está disponible y cómo coordino el pedido?`;
+      const waUrl = p.outOfStock ? '#' : buildWaUrl(msg);
+      const fallbackId = `ph-${Math.random().toString(36).slice(2, 9)}`;
+      const imgBlock = p.img
+        ? `<img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'; document.getElementById('${fallbackId}').style.display='block';" />
+           <div id="${fallbackId}" class="card-img-text" style="display:none;">
+             <div class="icon">${p.icon}</div>
+             <div class="name">${shortName(p.name)}</div>
+           </div>`
+        : `<div class="card-img-text">
+             <div class="icon">${p.icon}</div>
+             <div class="name">${shortName(p.name)}</div>
+           </div>`;
+      return `
+        <article class="card">
+          <div class="card-img">
+            ${p.sale ? `<span class="badge-sale">-${p.sale}%</span>` : ''}
+            ${p.outOfStock ? `<span class="badge-out">Agotado</span>` : ''}
+            ${imgBlock}
+          </div>
+          <div class="card-body">
+            <span class="card-cat">${catLabels[p.cat] || ''}</span>
+            <h3 class="card-title">${p.name}</h3>
+            <div class="card-price">
+              <span class="price-now">$${p.price.toFixed(2)}</span>
+              ${p.oldPrice ? `<span class="price-old">$${p.oldPrice.toFixed(2)}</span>` : ''}
+            </div>
+            <a href="${waUrl}" target="_blank" rel="noopener" class="card-cta ${p.outOfStock ? 'disabled' : ''}">
+              ${p.outOfStock ? 'Agotado' : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg> Pedir por WhatsApp`}
+            </a>
+          </div>
+        </article>
+      `;
+    }).join('');
+  }
+
+  function shortName(name) {
+    const stop = name.split(/[\(\-]/)[0].trim();
+    return stop.length > 22 ? stop.slice(0, 22) + '…' : stop;
+  }
+
+  // ============ WIRE GENERIC WA LINKS ============
+  document.querySelectorAll('.wa-link').forEach(a => {
+    const msg = a.dataset.msg || 'Hola, me interesan sus productos.';
+    a.href = buildWaUrl(msg);
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  // ============================================================
+  // ============ PANEL DE ADMINISTRACIÓN =======================
+  // ============================================================
+  // Acceso: Ctrl + Alt + A (en Mac: Control + Option + A)
+  // O agrega ?admin=1 al URL la primera vez para activarlo
+  // PIN por defecto: 1234 (puedes cambiarlo abajo)
+  const ADMIN_PIN = '1234';
+  const ADMIN_AUTH_KEY = 'vb_admin_unlocked';
+  const ADMIN_VISIBLE_KEY = 'vb_admin_visible';
+
+  const adminFab = document.getElementById('adminFab');
+  const adminOverlay = document.getElementById('adminOverlay');
+  const adminContent = document.getElementById('adminContent');
+  const adminToast = document.getElementById('adminToast');
+
+  function showAdminButton() {
+    localStorage.setItem(ADMIN_VISIBLE_KEY, '1');
+    adminFab.hidden = false;
+  }
+  function hideAdminButton() {
+    localStorage.removeItem(ADMIN_VISIBLE_KEY);
+    localStorage.removeItem(ADMIN_AUTH_KEY);
+    adminFab.hidden = true;
+  }
+
+  // Activar via URL ?admin=1 o Ctrl+Alt+A
+  if (new URLSearchParams(location.search).get('admin') === '1') showAdminButton();
+  if (localStorage.getItem(ADMIN_VISIBLE_KEY)) adminFab.hidden = false;
+  document.addEventListener('keydown', e => {
+    if (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'a') {
+      e.preventDefault();
+      if (adminFab.hidden) showAdminButton();
+      adminFab.hidden = false;
+      openAdmin();
+    }
+    if (e.key === 'Escape' && adminOverlay.classList.contains('open')) closeAdmin();
+  });
+
+  adminFab.addEventListener('click', openAdmin);
+  adminOverlay.addEventListener('click', e => {
+    if (e.target === adminOverlay) closeAdmin();
+  });
+
+  function toast(msg, color) {
+    adminToast.textContent = msg;
+    adminToast.style.background = color || 'var(--green)';
+    adminToast.classList.add('show');
+    setTimeout(() => adminToast.classList.remove('show'), 2200);
+  }
+
+  function openAdmin() {
+    if (sessionStorage.getItem(ADMIN_AUTH_KEY) === '1') {
+      renderAdminList();
+    } else {
+      renderAdminLogin();
+    }
+    adminOverlay.classList.add('open');
+  }
+  function closeAdmin() { adminOverlay.classList.remove('open'); }
+
+  function renderAdminLogin() {
+    adminContent.innerHTML = `
+      <div class="admin-pin">
+        <h3>Panel de Administración</h3>
+        <p>Ingresa el PIN para gestionar productos</p>
+        <input type="password" id="pinInput" placeholder="PIN" maxlength="20" autocomplete="off" />
+        <button class="admin-btn primary" id="pinSubmit" style="width:100%;">Entrar</button>
+        <p style="margin-top:14px;font-size:11px;opacity:0.6;">PIN por defecto: 1234</p>
+      </div>
+    `;
+    const input = document.getElementById('pinInput');
+    input.focus();
+    const submit = () => {
+      if (input.value === ADMIN_PIN) {
+        sessionStorage.setItem(ADMIN_AUTH_KEY, '1');
+        renderAdminList();
+      } else {
+        input.style.borderColor = 'var(--red)';
+        input.value = '';
+        toast('PIN incorrecto', 'var(--red)');
+      }
+    };
+    document.getElementById('pinSubmit').onclick = submit;
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
+  }
+
+  function renderAdminList() {
+    adminContent.innerHTML = `
+      <div class="admin-head">
+        <div>
+          <h2>Gestionar productos (${products.length})</h2>
+          <p style="font-size:12px;color:var(--muted);margin-top:2px;">Los cambios se guardan automáticamente en este dispositivo</p>
+        </div>
+        <div class="admin-actions">
+          <button class="admin-btn primary" id="addNew">+ Nuevo producto</button>
+          <button class="admin-btn" id="exportBtn" title="Exportar JSON">⬇ Exportar</button>
+          <button class="admin-btn" id="importBtn" title="Importar JSON">⬆ Importar</button>
+          <input type="file" id="importFile" accept=".json" hidden />
+          <button class="admin-btn danger" id="resetBtn" title="Volver a los 40 productos por defecto">↺ Reset</button>
+          <button class="admin-btn" id="closeBtn">✕ Cerrar</button>
+        </div>
+      </div>
+      <div class="admin-body">
+        <div class="admin-list" id="adminList"></div>
+      </div>
+    `;
+    const list = document.getElementById('adminList');
+    list.innerHTML = products.map((p, i) => `
+      <div class="admin-item" data-i="${i}">
+        <div class="admin-thumb">${p.img ? `<img src="${p.img}" alt="" onerror="this.parentNode.innerHTML='${p.icon || '📦'}'" />` : (p.icon || '📦')}</div>
+        <div class="admin-info">
+          <div class="n">${p.name}</div>
+          <div class="m">${catLabels[p.cat] || p.cat || 'sin categoría'}${p.outOfStock ? ' • Agotado' : ''}${p.sale ? ' • -' + p.sale + '%' : ''}</div>
+        </div>
+        <div class="admin-price-tag">$${Number(p.price).toFixed(2)}</div>
+        <div class="admin-icons">
+          <button title="Editar" data-edit="${i}">✎</button>
+          <button title="Subir" data-up="${i}">↑</button>
+          <button title="Bajar" data-down="${i}">↓</button>
+          <button title="Borrar" class="del" data-del="${i}">🗑</button>
+        </div>
+      </div>
+    `).join('');
+
+    document.getElementById('closeBtn').onclick = closeAdmin;
+    document.getElementById('addNew').onclick = () => renderAdminForm();
+    document.getElementById('resetBtn').onclick = () => {
+      if (confirm('¿Restaurar los 40 productos originales? Se perderán tus cambios.')) {
+        products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+        saveProducts();
+        renderAdminList();
+        renderGrid();
+        toast('Restaurado a productos originales');
+      }
+    };
+    document.getElementById('exportBtn').onclick = () => {
+      const blob = new Blob([JSON.stringify(products, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `productos-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      toast('Backup descargado');
+    };
+    document.getElementById('importBtn').onclick = () => document.getElementById('importFile').click();
+    document.getElementById('importFile').onchange = e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const data = JSON.parse(reader.result);
+          if (!Array.isArray(data)) throw new Error('Formato inválido');
+          if (!confirm(`¿Importar ${data.length} productos? Reemplazará los actuales.`)) return;
+          products = data;
+          saveProducts();
+          renderAdminList();
+          renderGrid();
+          toast('Productos importados');
+        } catch (err) {
+          toast('Error: ' + err.message, 'var(--red)');
+        }
+      };
+      reader.readAsText(file);
+    };
+
+    list.addEventListener('click', e => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      if (btn.dataset.edit !== undefined) renderAdminForm(+btn.dataset.edit);
+      else if (btn.dataset.del !== undefined) {
+        const i = +btn.dataset.del;
+        if (confirm(`¿Borrar "${products[i].name}"?`)) {
+          products.splice(i, 1);
+          saveProducts();
+          renderAdminList();
+          renderGrid();
+          toast('Producto eliminado');
+        }
+      }
+      else if (btn.dataset.up !== undefined) {
+        const i = +btn.dataset.up;
+        if (i > 0) { [products[i-1], products[i]] = [products[i], products[i-1]]; saveProducts(); renderAdminList(); renderGrid(); }
+      }
+      else if (btn.dataset.down !== undefined) {
+        const i = +btn.dataset.down;
+        if (i < products.length-1) { [products[i+1], products[i]] = [products[i], products[i+1]]; saveProducts(); renderAdminList(); renderGrid(); }
+      }
+    });
+  }
+
+  function renderAdminForm(idx) {
+    const isNew = idx === undefined;
+    const p = isNew ? { name: '', price: 0, icon: '📦', cat: 'wellness' } : { ...products[idx] };
+    adminContent.innerHTML = `
+      <div class="admin-head">
+        <h2>${isNew ? 'Nuevo producto' : 'Editar producto'}</h2>
+        <div class="admin-actions">
+          <button class="admin-btn" id="cancelBtn">← Volver</button>
+          <button class="admin-btn primary" id="saveBtn">${isNew ? 'Crear' : 'Guardar'}</button>
+        </div>
+      </div>
+      <div class="admin-body">
+        <div class="admin-form">
+          <label class="full">Nombre del producto
+            <input type="text" id="f-name" value="${escAttr(p.name)}" placeholder="Ej: Vitafer L Gold 500ml" />
+          </label>
+          <label>Precio actual ($)
+            <input type="number" step="0.01" id="f-price" value="${p.price || ''}" />
+          </label>
+          <label>Precio antes (opcional - para mostrar descuento)
+            <input type="number" step="0.01" id="f-oldPrice" value="${p.oldPrice || ''}" placeholder="Ej: 49.99" />
+          </label>
+          <label>Categoría
+            <select id="f-cat">
+              ${Object.entries(catLabels).map(([k, v]) => `<option value="${k}" ${p.cat === k ? 'selected' : ''}>${v}</option>`).join('')}
+            </select>
+          </label>
+          <label>Ícono (emoji - se muestra si no hay foto)
+            <input type="text" id="f-icon" value="${escAttr(p.icon || '📦')}" maxlength="2" />
+          </label>
+          <label class="full">Imagen del producto
+            <div style="display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;">
+              <div id="f-preview" style="width:90px;height:90px;border-radius:10px;background:linear-gradient(135deg,#1a2520,#0e1612);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:36px;overflow:hidden;flex-shrink:0;">
+                ${p.img ? `<img src="${escAttr(p.img)}" style="width:100%;height:100%;object-fit:cover;" />` : (p.icon || '📦')}
+              </div>
+              <div style="flex:1;min-width:200px;display:flex;flex-direction:column;gap:8px;">
+                <button type="button" class="admin-btn gold" id="f-upload-btn" style="width:100%;">📷 Subir foto desde mi dispositivo</button>
+                <input type="file" id="f-upload" accept="image/*" hidden />
+                <input type="url" id="f-img" value="${escAttr(p.img || '')}" placeholder="O pega un link https://..." style="font-size:12px;" />
+                ${p.img ? `<button type="button" class="admin-btn danger" id="f-clear" style="width:100%;font-size:12px;">✕ Quitar imagen</button>` : ''}
+              </div>
+            </div>
+            <span style="font-size:11px;color:var(--muted);text-transform:none;letter-spacing:0;margin-top:4px;">📌 Las fotos se comprimen automáticamente a 800px para no llenar el almacenamiento</span>
+          </label>
+          <label class="full">
+            <span style="display:flex;align-items:center;gap:8px;">
+              <input type="checkbox" id="f-out" ${p.outOfStock ? 'checked' : ''} style="width:auto;" />
+              <span style="text-transform:none;letter-spacing:0;">Producto agotado</span>
+            </span>
+          </label>
+          <div class="full" style="display:flex;gap:14px;align-items:center;padding:16px;background:var(--card);border-radius:12px;border:1px solid var(--border);">
+            <div style="flex:1;font-size:13px;color:var(--muted);">
+              💡 <strong style="color:var(--gold)">Tip:</strong> El descuento (%) se calcula automático con los dos precios.
+              Si solo pones "Precio actual" sin "Precio antes", no muestra descuento.
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    // Upload de imagen con compresión automática
+    const uploadBtn = document.getElementById('f-upload-btn');
+    const uploadInput = document.getElementById('f-upload');
+    const imgField = document.getElementById('f-img');
+    const preview = document.getElementById('f-preview');
+    const clearBtn = document.getElementById('f-clear');
+
+    function setPreview(src) {
+      if (src) {
+        preview.innerHTML = `<img src="${src}" style="width:100%;height:100%;object-fit:cover;" />`;
+      } else {
+        const ic = document.getElementById('f-icon');
+        preview.textContent = (ic && ic.value) || '📦';
+      }
+    }
+
+    uploadBtn.onclick = () => uploadInput.click();
+    uploadInput.onchange = e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      if (!file.type.startsWith('image/')) { toast('Solo imágenes (JPG, PNG, WebP)', 'var(--red)'); return; }
+      uploadBtn.textContent = '⏳ Procesando...';
+      compressImage(file, 800, 0.82).then(dataUrl => {
+        imgField.value = dataUrl;
+        setPreview(dataUrl);
+        uploadBtn.textContent = '📷 Cambiar foto';
+        const sizeKb = Math.round(dataUrl.length * 0.75 / 1024);
+        toast(`Foto subida (${sizeKb} KB)`);
+      }).catch(err => {
+        uploadBtn.textContent = '📷 Subir foto desde mi dispositivo';
+        toast('Error al procesar la imagen', 'var(--red)');
+      });
+    };
+
+    imgField.addEventListener('input', () => setPreview(imgField.value));
+    if (clearBtn) clearBtn.onclick = () => { imgField.value = ''; setPreview(''); toast('Imagen quitada'); };
+
+    document.getElementById('cancelBtn').onclick = renderAdminList;
+    document.getElementById('saveBtn').onclick = () => {
+      const name = document.getElementById('f-name').value.trim();
+      const price = parseFloat(document.getElementById('f-price').value);
+      if (!name) { toast('El nombre es obligatorio', 'var(--red)'); return; }
+      if (isNaN(price) || price < 0) { toast('Precio inválido', 'var(--red)'); return; }
+
+      const oldPriceRaw = document.getElementById('f-oldPrice').value.trim();
+      const oldPrice = oldPriceRaw ? parseFloat(oldPriceRaw) : null;
+      const sale = (oldPrice && oldPrice > price) ? Math.round((1 - price/oldPrice) * 100) : null;
+
+      const data = {
+        name,
+        price,
+        cat: document.getElementById('f-cat').value,
+        icon: document.getElementById('f-icon').value.trim() || '📦',
+        img: document.getElementById('f-img').value.trim() || undefined,
+        outOfStock: document.getElementById('f-out').checked || undefined
+      };
+      if (oldPrice) { data.oldPrice = oldPrice; data.sale = sale; }
+
+      if (isNew) products.push(data);
+      else products[idx] = data;
+      saveProducts();
+      renderGrid();
+      renderAdminList();
+      toast(isNew ? 'Producto creado' : 'Producto actualizado');
+    };
+  }
+
+  function escAttr(s) {
+    return String(s ?? '').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  }
+
+  // Comprime una imagen a JPEG con un máximo de ancho/alto y devuelve una data URL.
+  // Esto evita que el localStorage se llene con fotos pesadas de 5-10 MB del celular.
+  function compressImage(file, maxSize = 800, quality = 0.82) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onerror = reject;
+      reader.onload = e => {
+        const img = new Image();
+        img.onerror = reject;
+        img.onload = () => {
+          let { width, height } = img;
+          if (width > maxSize || height > maxSize) {
+            const ratio = Math.min(maxSize / width, maxSize / height);
+            width = Math.round(width * ratio);
+            height = Math.round(height * ratio);
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+          resolve(canvas.toDataURL('image/jpeg', quality));
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  renderFilters();
+  renderGrid();
+</script>
+
+</body>
+</html>
